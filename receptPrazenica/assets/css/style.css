@@ -24,8 +24,20 @@ h1, h2 {
     font-style: normal;
 }
 
-p { 
+p, li { 
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-weight: 400;
+}
+
+.priprava { 
+    background-color: hsl(330, 100%, 98%);
+    line-height: 1.8em;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.priprava > h3 {  
+    color:hsl(332, 51%, 32%);
+    font-family: "Outfit", serif;
 }
