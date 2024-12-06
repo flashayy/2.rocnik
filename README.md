@@ -1,1 +1,1 @@
-# 2.rocnik-web
+# 2. ročník multimédia web HTML-CSS
