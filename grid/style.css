@@ -80,3 +80,8 @@ h1{
     grid-column: 3/4;
     grid-row: 2/3;
 }
+
+.jedna{ 
+    grid-area: header;
+    background-color: greenyellow;
+}
