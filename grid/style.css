@@ -17,3 +17,7 @@ h1{
     background-color: crimson;
 }
 
+.item1{ 
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
