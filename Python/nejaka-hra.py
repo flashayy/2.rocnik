@@ -1,7 +1,9 @@
 from random import randrange
 import pygame
 from sys import exit as sysexit
+
 pygame.init()
+
 display = pygame.display.set_mode((10,10))
 velkost = 40
 priestor = [" "] * velkost
@@ -16,6 +18,7 @@ priestor[pozH] = hrac
 skore = 0
 RDUmax, RZSmin = 10, 8
 RDU, RZS = RDUmax, RZSmin
+
 def posunZnaku(pozicia, posun, znak, delta = 0):
     global priestor
     if 0 <= pozicia + posun < velkost and 0 <= pozicia + posun + delta < velkost:
@@ -23,10 +26,12 @@ def posunZnaku(pozicia, posun, znak, delta = 0):
         priestor[pozicia+posun] = znak
         return posun
     return 0
+
 def berieMinus(pozicia, posun):
     if priestor[pozicia+posun] == "-" and RZS > RZSmin:        
         return -1
     return 0
+
 def beriePlus(pozicia, posun):
     global priestor
     if priestor[pozicia+posun] == "+" and sirka < sirkaMax:
@@ -34,10 +39,12 @@ def beriePlus(pozicia, posun):
         priestor[pozLO+sirka+1] = okraj
         return 1
     return 0
+
 def berieRDU(pozicia, posun):
     if priestor[pozicia+posun] == "0":
         return RDUmax
     return RDU
+
 def umiestniPomoc(poleZnakov):
     global priestor
     for znak in poleZnakov:
@@ -47,12 +54,15 @@ def umiestniPomoc(poleZnakov):
                 while  priestor[pozPom] != " ":
                     pozPom = randrange(pozLO+1, pozLO+sirka)
                 priestor[pozPom] = znak
+
 def zmensiSirku():
     global priestor
     priestor[pozLO+sirka] = " "
     priestor[pozLO+sirka-1] = okraj
     return -1
+
 hrame = True
+
 while hrame:
     hodiny = pygame.time.Clock()
     skore += 1
