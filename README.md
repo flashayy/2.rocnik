@@ -1,1 +1,1 @@
-# 2. ročník multimédia web HTML-CSS
+# 2. ročník odbor multimediá
