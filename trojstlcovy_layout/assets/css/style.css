@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: hsl(0 0% 95%);
+	display: grid;
+	height: auto;
+	min-height: 100vh;
+	justify-items: center;
+}
+
+section {
+	display: flex;
+	width: auto;
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+}
+
+.card {
+	display: grid;
+	justify-items: start;
+	align-items: center;
+}
+
+h2 {
+	font-family: "Big Shoulders Display", cursive;
+	text-transform: uppercase;
+	color: hsl(0 0% 95%)
+}
+
+a,
+p,
+.attribution {
+	font-family: "Lexend Deca", sans-serif;
+	letter-spacing: 0.01rem;
+}
+
+.card p {
+	color: hsla(0, 0%, 100%, 0.75);
+	line-height: 2em;
+	align-self: start;
+}
+
+.card a {
+	text-decoration: none;
+}
+
+.Sedans a {
+	color:hsl(31 77% 52%);
+}
+
+.SUVs a {
+	color:hsl(179 100% 13%);
+}
+
+.Luxury a {
+	color:hsl(184 100% 22%);
+}
+
+.button {
+	background: hsl(0 0% 95%);
+	padding: 7% 15%;
+	border-radius: 50px;
+	width: fit-content;
+	transition: all 100ms ease-out;
+}
+
+.Sedans {
+	background: hsl(31 77% 52%);
+}
+
+.SUVs {
+	background: hsl(184 100% 22%);
+}
+
+.Luxury {
+	background: hsl(179 100% 13%);
+}
+
+footer {
+	grid-row: 3 / 4;
+	grid-column: 2 / 3;
+	align-self: end;
+	margin: 5px;
+}
+
+.button:hover,
+.button:focus {
+	color:hsla(0, 0%, 100%, 0.75);
+	border: 2px solid hsla(0, 0%, 100%, 0.75);
+	background-color: transparent;
+}
+
+@media screen and (min-width: 1001px) {
+	
+	h2 {
+		font-size: 40px;
+	}
+
+	a,
+	p,
+	.attribution {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	
+	h2 {
+		font-size: 30px;
+	}
+	
+	a,
+	p,
+	.attribution {
+		font-size: 12px;
+	}
+	
+}
+
+@media screen and (min-width: 701px) {
+	
+	body {
+		grid-template-rows: 1fr 3fr 1fr;
+		grid-template-columns: 1fr 5fr 1fr;
+	}
+	
+	section {
+		flex-direction: row;
+	}
+
+	.card {
+		padding: 3% 7% 3% 5%;
+		grid-template-rows: 3fr 2fr 5fr 2fr;
+		height: auto;
+	}
+
+	.Sedans {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	.Luxury {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+
+	body {
+		grid-template-rows: 10% auto 10%;
+		grid-template-columns: 5% auto 5%;
+	}
+
+	section {
+		flex-direction: column;
+	}
+
+	.card {
+		padding: 15%;
+		grid-template-rows: 3fr 3fr 5fr 3fr;
+		height: 50vh;
+	}
+
+	.Sedans {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	.Luxury {
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+}
