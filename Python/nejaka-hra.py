@@ -73,9 +73,9 @@ while hrame:
             pygame.quit()
             sysexit()
         if udalost.type == pygame.KEYDOWN:
-            if udalost.key == pygame.K_LEFT:
+            if udalost.key == pygame.K_a:
                 zmenaHraca = -1
-            if udalost.key == pygame.K_RIGHT:
+            if udalost.key == pygame.K_dd:
                 zmenaHraca = 1
             RZS += berieMinus(pozH, zmenaHraca)
             sirka += beriePlus(pozH, zmenaHraca)
