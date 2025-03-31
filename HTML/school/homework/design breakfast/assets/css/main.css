@@ -51,10 +51,13 @@ div p  {
     font-weight: bold;
     justify-content: center;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 footer p    {   
     color: white;
     justify-content: center;
     text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1px;
 }
