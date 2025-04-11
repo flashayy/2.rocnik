@@ -5,6 +5,7 @@
     --fialova-svetlejsia: #A89BFF;
     --fialova-tmavsia: #5C45FD;
     --pozadie: #161616;
+    --text-seda: #ABB2BF;
     
 }
 body {  
@@ -13,7 +14,6 @@ body {
 .logo{  
     width: 765px;
     height: 261px;
-    display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--fialova-svetlejsia);
@@ -21,11 +21,14 @@ body {
     border-radius: 130.5px;
     filter: blur(50px);
     position: absolute;
-    left: -450px;
-    top: -112px;
+    left: -28.12rem;
+    top: -7rem;
 }
 
-div p   {   
-    color: white;
+.nav-box    {   
+    width: 651px;
+    height: 256px;
+    background-color: var(--fialova-tmavsia);
+    margin-right: 0rem;
 }
 
