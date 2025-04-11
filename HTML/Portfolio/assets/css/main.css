@@ -6,23 +6,52 @@
     --fialova-tmavsia: #5C45FD;
     --pozadie: #161616;
     --text-seda: #ABB2BF;
-    
+    --white: #FFF;
 }
+
 body {  
     background-color: var(--pozadie);
 }
-.logo{  
-    width: 765px;
-    height: 261px;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--fialova-svetlejsia);
-    transform: rotate(25.51deg);
-    border-radius: 130.5px;
-    filter: blur(50px);
+
+  .logo-blur {
     position: absolute;
-    left: -28.12rem;
     top: -7rem;
-}
+    left: -28rem;
+    width: 47.8125rem;
+    height: 16.3125rem;
+    background-color: var(--fialova-svetlejsia);
+    border-radius: 8rem;
+    transform: rotate(25deg);
+    filter: blur(3rem);
+    z-index: 0;
+  }
+  
+  .logo-text {
+    position: relative;
+    color: var(--white);
+    font-family: "Fira Code", monospace;
+    font-size: 2rem;
+    z-index: 1;
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 2rem;
+    padding: 4rem;
+  }
 
-
+  .nav-text {   
+    color: var(--white);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: flex;
+    width: 416px;
+    height: 36px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 66px;
+    flex-shrink: 0;
+  }
