@@ -1,23 +1,68 @@
-:root{  
+:root {
   --primarna: #ffffff;
   --sekundarna: #111111;
-  --prekrytie: rgba(0; 0; 0; 0; 5):
+  --prekrytie: rgba(0, 0, 0, 0.5);
+  --font-main: roboto
 }
 
 * {
-  box-sizing: border-box;                     /* Padding a border sa započítavajú do celkovej veľkosti */
+  box-sizing: border-box;
+  /* Padding a border sa započítavajú do celkovej veľkosti */
 }
 
 body {
-  margin: 0;                                  /* Odstráni okraje okolo tela stránky */
-  font-family: var(--font-main);              /* Použije písmo z premennej */
-  color: var(--primarna);                /* Farba textu - biela */
-  background-color: var(--sekundarna);   /* Tmavé pozadie stránky */
-  line-height: 1.6;                           /* Vzdialenosť medzi riadkami */
+  margin: 0;
+  /* Odstráni okraje okolo tela stránky */
+  font-family: var(--font-main);
+  /* Použije písmo z premennej */
+  color: var(--primarna);
+  /* Farba textu - biela */
+  background-color: var(--sekundarna);
+  /* Tmavé pozadie stránky */
+  line-height: 1.6;
+  /* Vzdialenosť medzi riadkami */
 }
 
 .container {
-  max-width: 1250px;                          /* Maximálna šírka kontajnera */
-  margin: 0 auto;                             /* Horizontálne vycentrovanie */
-  padding: 1rem;                              /* Vnútorné odsadenie */
+  max-width: 1250px;
+  /* Maximálna šírka kontajnera */
+  margin: 0 auto;
+  /* Horizontálne vycentrovanie */
+  padding: 1rem;
+  /* Vnútorné odsadenie */
+}
+
+.header {
+  height: 80vh;
+  background-image: url("https://images.unsplash.com/photo-1617079114138-9cf245e006c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header__h1 {
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+}
+
+.header__p {  
+  font-size: 1.5rem;
+  font-weight: 300;
+  z-index: 1;
+}
+
+.header::before { 
+  content: '';
+  position: absolute;
+  background-color: var(--prekrytie);
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: 0;
+}
+
+.header__obsah {  
+  z-index: 5;
 }
