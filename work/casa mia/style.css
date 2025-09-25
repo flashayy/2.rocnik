@@ -1,0 +1,157 @@
+/* Import fontu */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset a základ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #222;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6f3c;
+}
+
+/* Sekcie */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #222;
+}
+
+/* O nás */
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Menu */
+#menu .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.menu-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.menu-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #ff6f3c;
+}
+
+.menu-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Rezervácia */
+#reservation form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+#reservation input,
+#reservation button {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+#reservation input:focus {
+    outline: none;
+    border-color: #ff6f3c;
+}
+
+#reservation button {
+    background-color: #ff6f3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+#reservation button:hover {
+    background-color: #e65a1f;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #777;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.95em;
+}
